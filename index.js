@@ -1,5 +1,7 @@
 const pergunta = require('./interface/lerprompt');
 const presentation = require('./interface/presentation');
+const tratamento = require('./interface/tratamento_entrada');
+
 function executar(){
     
     console.log(presentation);
@@ -9,8 +11,8 @@ function executar(){
         >Papel
         >Tesoura
     `);
-    //var resposta = pergunta('Opção: _');
-    //console.log(resposta);
+    var resposta = pergunta('Opção: _');
+    resposta = tratamento(resposta);
 }
 
 executar();
