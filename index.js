@@ -1,8 +1,16 @@
-const prompt = require('./interface/lerprompt');
-
+const pergunta = require('./interface/lerprompt');
+const presentation = require('./interface/presentation');
 function executar(){
-    var resposta = prompt.question('Annie are You okay?');
-    console.log(resposta);
+    
+    console.log(presentation);
+    console.log('Escolha sua opção: ');
+    console.log(`
+        >Pedra
+        >Papel
+        >Tesoura
+    `);
+    //var resposta = pergunta('Opção: _');
+    //console.log(resposta);
 }
 
 executar();

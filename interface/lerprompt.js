@@ -1,3 +1,3 @@
-const prompt = require('readline-sync');
+const prompt = require('prompt-sync')();
 
 module.exports = prompt;
